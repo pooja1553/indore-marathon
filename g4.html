@@ -1,0 +1,345 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Gallery 2024</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p" crossorigin="anonymous"></script>
+<style>
+   header{
+    position: sticky;
+    top: 0;
+    z-index: 1;
+    background-color: rgb(250, 250, 250);
+   }
+   .navbar-toggler-icon{
+     background-image: url(hamburger.png);
+   }
+   .navbar-toggler{
+    border: 3px solid black;
+    width: 60px;
+    height: 45px;
+   }
+    .nav-link{
+        color: #333333;
+
+    }
+ 
+    .navbar{
+        font-weight: 500;
+        font-size: larger;
+     }
+    .navbar-nav{
+        margin-left: 100px;
+   }
+    .nav-items{
+        margin-left: 30px;
+    }
+    .nav-link:hover{
+        color: #7DA402;
+    }
+    .logo{
+        padding-left: 50px;
+    }
+    .logo2{
+     margin-right: 170px;
+   }
+    .ft1{
+        text-align: center;
+        background-color: #333333;
+        color: #FFFFFF;
+        padding: 50px;
+        margin: 5px 0px 0px 0px;
+        /* border: 2px solid green; */
+   }
+   .ft1-1 span{
+    padding-right: 18px;
+   
+   }
+   .ft1-1{
+    padding-bottom: 50px;
+
+   }
+   .ft1-2 span{
+    padding-right: 30px;
+   }
+   .ft2{
+    text-align: center;
+    background-color: #191818;
+    color: #FFFFFF;
+    padding: 10px;
+    
+   }
+   .box1{
+    background-image: url("https://tse4.mm.bing.net/th?id=OIP.ZplLetm4pZb_Z4yz-1vKPQHaE7&pid=Api&P=0&h=180");
+    width: 100%;
+    height: 300px;
+    /* background-size: cover; */
+    background-size: contain;
+    opacity: 0.9;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+ 
+   }
+   .box1 h2{
+    font-size: 40px;
+    font-weight: 700;
+    text-transform: uppercase;
+    color: white;
+   }
+   .ft12{
+    display: flex;
+    justify-content: space-evenly;
+   }
+   .ft12 li{
+   font-weight: 600;
+    list-style-type: disc;
+    color: #7DA402;
+   }
+   .ft12 li span{
+    color: white;
+   }
+   .box2{
+    margin: 70px 100px 150px 100px;
+    }
+   .container{
+    display: flex;
+    justify-content: space-around;
+     }
+   .one img{
+    width: 310px;
+    padding: 7px;
+    border-radius: 15px;
+    border: 2px solid rgb(255, 255, 255);
+  }
+  @media only screen and (min-width:350px) and (max-width:650px){
+    .ft12{
+    display: flex;
+   flex-direction: column;
+   }
+   li span{
+   padding-top: 10px;
+   }
+
+  .box1{
+    background-repeat: no-repeat;
+   }
+   .box2{
+    margin:15px;
+  }
+   .container{
+    display: flex;
+   flex-wrap: wrap;
+   margin:1px;
+  }
+  .box1 h2{
+    font-size: 20px;
+   text-align: center;
+  }
+  .box1{
+   background-repeat: no-repeat;
+   }
+  .one img{
+    width: 310px;
+    padding: 10px;
+    border-radius: 15px;
+    border: 2px solid rgb(255, 255, 255);
+   }
+   .ft12 li{
+    list-style-type: none;
+  }
+  
+   }
+    
+</style>
+</head>
+<body>
+    <header>
+    <nav class="navbar navbar-expand-lg ">
+        <div class="container-fluid">
+          <!-- <a class="navbar-brand" href="#">Navbar</a> -->
+           <div class="logo"><img src="https://indoremarathon.in/wp-content/uploads/2023/11/4-1new-logo.png" alt="" width="100px"></div>
+          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <div class="collapse navbar-collapse" id="navbarSupportedContent">
+            <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+              <li class="nav-item">
+                <a class="nav-link active" aria-current="page" href="index.html">Home</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="dews_run_2024_registration.html">DEWAS RUN 2024 REGISTRATION</a>
+              </li>
+              <!--drop down-->
+              <li class="nav-item dropdown">
+                <a class="nav-link dropdown-toggle" href="our_events.html" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                  OUR EVENTS
+                </a>
+                <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+                  <li><a class="dropdown-item" href="rmnr.html">RAINATHON MONSOON NIGHT RUN 2024</a></li>
+                  <li><a class="dropdown-item" href="im4.html">INDORE MARATHON 2024</a></li>
+                  <!-- <li><hr class="dropdown-divider"></li> -->
+                  <li><a class="dropdown-item" href="im3.html">INDORE MARATHON 2023</a></li>
+                  <li><a class="dropdown-item" href="r4.html">RAINATHON 2024</a></li>
+                  <li><a class="dropdown-item" href="r3.html">RAINATHON 2023</a></li>
+                  <!-- <li><hr class="dropdown-divider"></li> -->
+                  <li><a class="dropdown-item" href="dewas.html">DEWAS RUN</a></li>
+                </ul>
+              </li>
+
+              
+              <li class="nav-item">
+                <a class="nav-link active" aria-current="page" href="results.html">RESULTS</a>
+              </li>
+              <li class="nav-item dropdown">
+                <a class="nav-link dropdown-toggle" href="gallery.html" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                  GALLERY
+                </a>
+                <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+                  <li><a class="dropdown-item" href="g4.html">GALLERY 2024</a></li>
+                  <li><a class="dropdown-item" href="g3.html">GALLERY 2023</a></li>
+                
+                </ul>
+              </li>
+              
+              <li class="nav-item">
+                <a class="nav-link active" aria-current="page" href="contact_us.html">CONTACT US</a>
+              </li>
+            </ul>
+          
+            <div class="logo2"><img src="https://indoremarathon.in/wp-content/uploads/2023/11/aims-logo_updt.png" alt="" width="50px"></div>
+          </div>
+        </div>
+      </nav>
+    </header>
+
+    <!--main-->
+    <main>
+      <div class="box1 bold"><h2>Gallery 2024</h2></div>
+      <div class="box">
+        <div class="box2">
+          <!--container-->
+          <div class="container">
+            <div class="one">
+             <img src="https://indoremarathon.in/wp-content/uploads/2024/02/1.jpg" alt="">
+             <img src="https://indoremarathon.in/wp-content/uploads/2024/02/6.jpg" alt="">
+             <img src="https://indoremarathon.in/wp-content/uploads/2024/02/5.jpg" alt="">
+             <img src="https://indoremarathon.in/wp-content/uploads/2024/02/2.jpg" alt="">
+            </div>
+          </div>
+           <!--container-->
+           <div class="container">
+            <div class="one">
+              <img src="https://indoremarathon.in/wp-content/uploads/2024/02/3.jpg" alt="">
+              <img src="https://indoremarathon.in/wp-content/uploads/2024/02/4.jpg" alt="">
+              <img src="https://indoremarathon.in/wp-content/uploads/2024/02/7.jpg" alt="">
+              <img src="https://indoremarathon.in/wp-content/uploads/2024/02/8.jpg" alt="">
+            </div>
+           </div>
+           <!--container-->
+           <div class="container">
+            <div class="one">
+              <img src="https://indoremarathon.in/wp-content/uploads/2024/02/9.jpg" alt="">
+              <img src="https://indoremarathon.in/wp-content/uploads/2024/02/10.jpg" alt="">
+              <img src="https://indoremarathon.in/wp-content/uploads/2024/02/11.jpg" alt="">
+              <img src="https://indoremarathon.in/wp-content/uploads/2024/02/12.jpg" alt="">
+            </div>
+           </div>
+           <!--container-->
+           <div class="container">
+            <div class="one">
+            <img src="https://indoremarathon.in/wp-content/uploads/2024/02/13.jpg" alt="">
+            <img src="https://indoremarathon.in/wp-content/uploads/2024/02/14.jpg" alt="">
+            <img src="https://indoremarathon.in/wp-content/uploads/2024/02/15.jpg" alt="">
+            <img src="https://indoremarathon.in/wp-content/uploads/2024/02/22.jpg" alt="">  
+            </div>
+           </div>
+           <!--container-->
+           <div class="container">
+            <div class="one">
+              <img src="https://indoremarathon.in/wp-content/uploads/2024/02/21.jpg" alt="">
+              <img src="https://indoremarathon.in/wp-content/uploads/2024/02/20.jpg" alt="">
+              <img src="https://indoremarathon.in/wp-content/uploads/2024/02/19.jpg" alt="">
+              <img src="https://indoremarathon.in/wp-content/uploads/2024/02/18.jpg" alt="">
+            </div>
+           </div>
+             <!--container-->
+             <div class="container">
+              <div class="one">
+              <img src="https://indoremarathon.in/wp-content/uploads/2024/02/17.jpg" alt="">
+              <img src="https://indoremarathon.in/wp-content/uploads/2024/02/16.jpg" alt="">
+              <img src="https://indoremarathon.in/wp-content/uploads/2024/02/29.jpg" alt="">
+              <img src="https://indoremarathon.in/wp-content/uploads/2024/02/28.jpg" alt="">  
+              </div>
+             </div>
+             <!--container-->
+             <div class="container">
+              <div class="one">
+              <img src="https://indoremarathon.in/wp-content/uploads/2024/02/26.jpg" alt="">
+              <img src="https://indoremarathon.in/wp-content/uploads/2024/02/27.jpg" alt="">
+              <img src="https://indoremarathon.in/wp-content/uploads/2024/02/25.jpg" alt="">
+              <img src="https://indoremarathon.in/wp-content/uploads/2024/02/24.jpg" alt="">  
+              </div>
+             </div>
+              <!--container-->
+              <div class="container">
+                <div class="one">
+                <img src="https://indoremarathon.in/wp-content/uploads/2024/02/23.jpg" alt="">
+                <img src="https://indoremarathon.in/wp-content/uploads/2024/02/30.jpg" alt="">
+                <img src="https://indoremarathon.in/wp-content/uploads/2024/02/31.jpg" alt="">
+                <img src="https://indoremarathon.in/wp-content/uploads/2024/02/32.jpg" alt="">  
+                </div>
+               </div>
+                <!--container-->
+             <div class="container">
+              <div class="one">
+                <img src="https://indoremarathon.in/wp-content/uploads/2024/02/33.jpg" alt="">
+                <img src="https://indoremarathon.in/wp-content/uploads/2024/02/34.jpg" alt="">
+                <img src="https://indoremarathon.in/wp-content/uploads/2024/02/35.jpg" alt="">
+                <img src="https://indoremarathon.in/wp-content/uploads/2024/02/36.jpg" alt="">
+              </div>
+             </div>
+          
+        </div>
+      </div>
+
+    </main>
+
+    <!--footer-->
+    <footer>
+        <div class="ft">
+
+        <div class="ft1">
+            <div class="ft1-1"><span><img src="facebook (1).png" alt="" width="50px"></span><span><img src="instagram.png" alt=""  width="50px"></span></div>
+        
+        <!-- <div class="ft1-2">
+            <span>FAQ</span><span> SAFETY TIPS FOR RUNNERS</span><span>RULES & REGULATIONS</span><span>BLOGS</span><span>TERMS & CONDITIONS</span><span>PRIVACY & POLICY</span><span>REFUND POLICY</span><span>THE TEAM</span>
+        </div> -->
+
+        <div class="ft1-2">
+         
+          <ul class="ft12">
+            <li><span>FAQ</span></li>
+            <li><span> SAFETY TIPS FOR RUNNERS</span></li>
+            <li><span>RULES & REGULATIONS</span></li>
+            <li><span>BLOGS</span></li>
+            <li><span>TERMS & CONDITIONS</span></li>
+            <li><span>PRIVACY & POLICY</span></li>
+            <li><span>REFUND POLICY</span></li>
+            <li><span>THE TEAM</span></li>
+          </ul>
+          </div>
+
+    </div>
+    <div class="ft2"><p>© 2022-2023 Academy of Indore Marathoners (A unit of Malwa Marathoners)</p>
+    <p>Website Designed, Developed & Maintained by | Syscraft Information System</p></div>
+  
+  
+
+    </div>
+    </footer>
+    
+</body>
+</html>

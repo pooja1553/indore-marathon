@@ -1,0 +1,509 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Rainathon 2023</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p" crossorigin="anonymous"></script>
+<style>
+   header{
+    position: sticky;
+    top: 0;
+    z-index: 1;
+    background-color: rgb(250, 250, 250);
+   }
+   .navbar-toggler-icon{
+     background-image: url(hamburger.png);
+   }
+   .navbar-toggler{
+    border: 3px solid black;
+    width: 60px;
+    height: 45px;
+   }
+    .nav-link{
+        color: #333333;
+
+    }
+ 
+    .navbar{
+        font-weight: 500;
+        font-size: larger;
+     }
+    .navbar-nav{
+        margin-left: 100px;
+   }
+    .nav-items{
+        margin-left: 30px;
+    }
+    .nav-link:hover{
+        color: #7DA402;
+    }
+    .logo{
+        padding-left: 50px;
+    }
+    .logo2{
+     margin-right: 170px;
+   }
+    .ft1{
+        text-align: center;
+        background-color: #333333;
+        color: #FFFFFF;
+        padding: 50px;
+        margin: 5px 0px 0px 0px;
+        /* border: 2px solid green; */
+   }
+   .ft1-1 span{
+    padding-right: 18px;
+   
+   }
+   .ft1-1{
+    padding-bottom: 50px;
+
+   }
+   .ft1-2 span{
+    padding-right: 30px;
+   }
+   .ft2{
+    text-align: center;
+    background-color: #191818;
+    color: #FFFFFF;
+    padding: 10px;
+    
+   }
+   .box1{
+    background-image: url("https://tse4.mm.bing.net/th?id=OIP.ZplLetm4pZb_Z4yz-1vKPQHaE7&pid=Api&P=0&h=180");
+    width: 100%;
+    height: 300px;
+    /* background-size: cover; */
+    background-size: contain;
+    opacity: 0.7;
+ 
+   }
+   .box1 {
+    text-align: center;
+    padding-top: 100px;
+   
+   }
+   .box{
+    padding: 50px 10px 50px 10px;
+    /* border: 2px solid red; */
+   }
+   h2{
+    color: black;
+    font-size: 40px;
+    font-weight: 700;
+    text-transform: uppercase;
+    text-align: center;
+    }
+    h3{
+    color: black;
+    font-size: 30px;
+    font-weight: 700;
+    text-transform: uppercase;
+    text-align: center;
+    }
+    h4{
+    color: black;
+    font-size: 20px;
+    font-weight: 500;
+   text-align: center;
+    }
+    .box4{
+      display: flex;
+      justify-content: space-around;
+      /* border: 2px solid green; */
+      padding: 30px 30px 15px 30px; 
+      
+    }
+   .green{
+      color: #7DA402;
+      font-weight: 650;
+      font-size: 20px;
+    } 
+    .box4-1,.box4-2{
+      border: 2px soild rgb(242, 242, 245);
+      border-radius: 10px;
+      background-color: #f6f5f5;
+      padding: 20px;
+      width: 650px;
+      height: 270px;
+      /* border: 2px solid red; */
+      box-shadow: 5px 5px rgb(226, 226, 226);
+      
+    }
+    /* .box4-2{
+      border: 2px soild brown;
+    } */
+    .box4-1 table,.box4-2 table{
+      border: 2px solid rgb(221, 221, 221);
+      border-radius: 5px;
+      background-color:white;
+      width:600px;
+      height: 200px;
+     
+    }
+  
+    th,td,table,tr{
+      border:2px solid rgb(221,221,221);
+    }
+    td,th{
+      padding-left: 10px;
+    }
+    .ft12{
+    display: flex;
+    justify-content: space-evenly;
+   }
+   .ft12 li{
+    /* font-size: 18px; */
+    font-weight: 600;
+    list-style-type: disc;
+    color: #7DA402;
+   }
+   .ft12 li span{
+    color: white;
+   }
+   @media only screen and (min-width:350px) and (max-width:650px){
+    .ft12{
+    display: flex;
+   flex-direction: column;
+   }
+   li span{
+   padding-top: 10px;
+   }
+   .box1{
+    background-repeat: no-repeat;
+   }
+   h2{
+    font-size: 30px;
+    font-weight: 900;
+   }
+   h3{
+    font-size: 20px;
+   }
+   h4{
+    font-size: 15px;
+   }
+   .box4{
+      display: flex;
+      flex-wrap: wrap;
+     padding: 1px;
+    }
+    .box4-1,.box4-2{
+      margin: 1px;
+       border-radius: 10px;
+      padding: 8px;
+      width: 340px;
+      height: 220px;
+     margin-bottom: 15px;
+      margin-top: 15px;
+    }
+    td,th{
+      padding-left: 5px;
+    }
+    .box4-1 table,.box4-2 table{
+      border: 2px solid rgb(221, 221, 221);
+      border-radius: 5px;
+      background-color:white;
+      width:320px;
+      height: 170px;
+      }
+      .box4-1 table,.box4-2 table{
+     border-radius: 5px;
+      width:320px;
+      height: 170px;
+      }
+    h2{
+      font-size: 20px;
+    }
+    h3{
+      font-size: 15px;
+    }
+    h4{
+      font-size: 10px;
+    }
+    table{
+      font-size: 10px;
+    }
+    .green{
+      font-size: 15px;
+    }
+    .box4-1, .box4-2{
+      overflow-x: scroll;
+      overflow-y: hidden;
+      }
+      .box1{
+        height: 220px;
+      }
+      .box{
+      padding-top: 10px;
+      }
+      .ft12 li{
+    list-style-type: none;
+  }
+   }
+</style>
+</head>
+<body>
+    <header>
+    <nav class="navbar navbar-expand-lg ">
+        <div class="container-fluid">
+          <!-- <a class="navbar-brand" href="#">Navbar</a> -->
+           <div class="logo"><img src="https://indoremarathon.in/wp-content/uploads/2023/11/4-1new-logo.png" alt="" width="100px"></div>
+          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <div class="collapse navbar-collapse" id="navbarSupportedContent">
+            <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+              <li class="nav-item">
+                <a class="nav-link active" aria-current="page" href="index.html">Home</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="dews_run_2024_registration.html">DEWAS RUN 2024 REGISTRATION</a>
+              </li>
+              <!--drop down-->
+              <li class="nav-item dropdown">
+                <a class="nav-link dropdown-toggle" href="our_events.html" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                  OUR EVENTS
+                </a>
+                <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+                  <li><a class="dropdown-item" href="rmnr.html">RAINATHON MONSOON NIGHT RUN 2024</a></li>
+                  <li><a class="dropdown-item" href="im4.html">INDORE MARATHON 2024</a></li>
+                  <!-- <li><hr class="dropdown-divider"></li> -->
+                  <li><a class="dropdown-item" href="im3.html">INDORE MARATHON 2023</a></li>
+                  <li><a class="dropdown-item" href="r4.html">RAINATHON 2024</a></li>
+                  <li><a class="dropdown-item" href="r3.html">RAINATHON 2023</a></li>
+                  <!-- <li><hr class="dropdown-divider"></li> -->
+                  <li><a class="dropdown-item" href="dewas.html">DEWAS RUN</a></li>
+                </ul>
+              </li>
+
+              
+              <li class="nav-item">
+                <a class="nav-link active" aria-current="page" href="results.html">RESULTS</a>
+              </li>
+              <li class="nav-item dropdown">
+                <a class="nav-link dropdown-toggle" href="gallery.html" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                  GALLERY
+                </a>
+                <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+                  <li><a class="dropdown-item" href="g4.html">GALLERY 2024</a></li>
+                  <li><a class="dropdown-item" href="g3.html">GALLERY 2023</a></li>
+                
+                </ul>
+              </li>
+              
+              <li class="nav-item">
+                <a class="nav-link active" aria-current="page" href="contact_us.html">CONTACT US</a>
+              </li>
+            </ul>
+          
+            <div class="logo2"><img src="https://indoremarathon.in/wp-content/uploads/2023/11/aims-logo_updt.png" alt="" width="50px"></div>
+          </div>
+        </div>
+      </nav>
+    </header>
+
+    <!--main-->
+    <main>
+      <div class="box1"><h2> Rainathon 21km finishers</h2></div>
+      <div class="box">
+        <div class="box2"><h3>Rainathon 21km Results</h3></div>
+        <div class="box3"><h4>(Results By Sports Timing Solutions)</h4></div>
+        <div class="box4">
+          <div class="box4-1">
+            <div class="box4-1-1">
+             
+            <table>
+              <span class="green">MALE BELOW 40 YRS</span>
+              <thead>
+                <tr>
+                  <th>Rank</th>
+                  <th> Bib Number</th>
+                  <th>	Name</th>
+                  <th> Time</th>
+                 
+                </tr>
+              </thead>
+              <tbody>
+                <tr>
+                  <td>1</td>
+                  <td>2149</td>
+                  <td>Gopal Kushwah</td>
+                  <td>01.42.17</td>
+                </tr>
+                <tr>
+                  <td>2</td>
+                  <td>2189</td>
+                  <td>Vedram Nirmalkar</td>
+                  <td>01.44.03</td>
+                </tr>
+                <tr>
+                  <td>3</td>
+                  <td>2016</td>
+                  <td>Gangaram Mourya</td>
+                  <td>01.48.46</td>
+                </tr>
+              </tbody>
+            </table>
+          </div>
+          </div>
+          <div class="box4-2">
+            <div class="box42-2">
+           
+            <table>
+              <span class="green">MALE ABOVE 40 YRS</span>
+              <thead>
+                <tr>
+                    <th>Rank</th>
+                  <th> Bib Number</th>
+                  <th>	Name</th>
+                  <th> Time</th>
+                  
+                </tr>
+              </thead>
+              <tbody>
+                <tr>
+                  <td>1</td>
+                  <td>2023</td>
+                  <td>Rajnish Sharma</td>
+                  <td>01.37.02</td>
+                </tr>
+                <tr>
+                  <td>2</td>
+                  <td>2134</td>
+                  <td>Hariom Kori</td>
+                  <td>01.43.17</td>
+                </tr>
+                <tr>
+                  <td>3</td>
+                  <td>2088</td>
+                  <td>Amvesh Rajput</td>
+                  <td>01.45.07</td>
+                </tr>
+              </tbody>
+            </table>
+          </div>
+          </div>
+        </div>
+      
+        
+         
+            <!--box7-->
+            <div class="box4">
+              <div class="box4-1">
+                <div class="box4-1-1">
+                
+                <table>
+                  <span class="green">FEMALE BELOW 40 YRS</span>
+                  <thead>
+                    <tr>
+                        <th>Rank</th>
+                      <th> Bib Number</th>
+                      <th>	Name</th>
+                      <th>Time</th>
+                      
+                    </tr>
+                  </thead>
+                  <tbody>
+                    <tr>
+                      <td>1</td>
+                      <td>2175</td>
+                      <td>Madhu Mishra</td>
+                      <td>02.42.07</td>
+                    </tr>
+                    <tr>
+                      <td>2</td>
+                      <td>2120</td>
+                      <td>Khyati Seth</td>
+                      <td>03.15.11</td>
+                    </tr>
+                    <tr>
+                      <td>3</td>
+                      <td>2046</td>
+                      <td>Tanishka Munjar</td>
+                      <td>03.48.01</td>
+                    </tr>
+                  </tbody>
+                </table>
+              </div>
+              </div>
+              <div class="box4-2">
+                <div class="box42-2">
+               
+                <table>
+                  <span class="green">FEMALE ABOVE 40 YRS</span>
+                  <thead>
+                    <tr>
+                        <th>Rank</th>
+                      <th> Bib Number</th>
+                      <th>	Name</th>
+                      <th>Time</th>
+                      
+                    </tr>
+                  </thead>
+                  <tbody>
+                    <tr>
+                      <td>1</td>
+                      <td>2159</td>
+                      <td>Preeti Khandwelwal</td>
+                      <td>01.57.48</td>
+                    </tr>
+                    <tr>
+                      <td>2</td>
+                      <td>2015</td>
+                      <td>Jyotsna Dubey</td>
+                      <td>02.34.58</td>
+                    </tr>
+                    <tr>
+                      <td>3</td>
+                      <td>2024</td>
+                      <td>Sunita Singh</td>
+                      <td>02.59.38</td>
+                    </tr>
+                  </tbody>
+                </table>
+              </div>
+              </div>
+            </div>
+
+      </div>
+
+    </main>
+
+    <!--footer-->
+    <footer>
+        <div class="ft">
+
+        <div class="ft1">
+            <div class="ft1-1"><span><img src="facebook (1).png" alt="" width="50px"></span><span><img src="instagram.png" alt=""  width="50px"></span></div>
+        
+        <!-- <div class="ft1-2">
+            <span>FAQ</span><span> SAFETY TIPS FOR RUNNERS</span><span>RULES & REGULATIONS</span><span>BLOGS</span><span>TERMS & CONDITIONS</span><span>PRIVACY & POLICY</span><span>REFUND POLICY</span><span>THE TEAM</span>
+        </div> -->
+
+        <div class="ft1-2">
+         
+          <ul class="ft12">
+            <li><span>FAQ</span></li>
+            <li><span> SAFETY TIPS FOR RUNNERS</span></li>
+            <li><span>RULES & REGULATIONS</span></li>
+            <li><span>BLOGS</span></li>
+            <li><span>TERMS & CONDITIONS</span></li>
+            <li><span>PRIVACY & POLICY</span></li>
+            <li><span>REFUND POLICY</span></li>
+            <li><span>THE TEAM</span></li>
+          </ul>
+          </div>
+
+    </div>
+    <div class="ft2"><p>© 2022-2023 Academy of Indore Marathoners (A unit of Malwa Marathoners)</p>
+    <p>Website Designed, Developed & Maintained by | Syscraft Information System</p></div>
+  
+  
+
+    </div>
+    </footer>
+    
+</body>
+</html>
